@@ -1,0 +1,743 @@
+/* =========================================
+   General
+   ========================================= */
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    /* Modelo de caja eliminado para ser más básico */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+    background-color: #F4F4F9; /* Color solido de fondo */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Tipografía */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 50px; /* CSS3 Radio de borde */
+    font-weight: 600;
+    cursor: pointer;
+    cursor: pointer;
+    /* Transición eliminada */
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.boton-primario {
+    background-color: #2A9D8F;
+    color: #FFFFFF;
+}
+
+.boton-primario:hover {
+    background-color: #1D7A6F; /* Cambio de color al pasar el cursor */
+}
+
+.boton-secundario {
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.boton-secundario:hover {
+    background-color: #FFFFFF;
+    color: #2A9D8F;
+}
+
+/* Footer */
+footer {
+    background-color: #264653;
+    color: #FFFFFF;
+    padding: 80px 0 20px;
+}
+
+.columna-pie h4 {
+    margin-bottom: 20px;
+}
+
+.columna-pie ul li {
+    margin-bottom: 10px;
+}
+
+.columna-pie ul li a {
+    color: #ccc;
+    /* Transición eliminada */
+}
+
+.columna-pie ul li a:hover {
+    color: #FFFFFF;
+    padding-left: 5px;
+}
+
+.formulario-boletin input {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formulario-boletin button {
+    background-color: #E9C46A;
+    color: #264653;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    cursor: pointer;
+    /* Transición eliminada */
+    width: 100%;
+}
+
+.formulario-boletin button:hover {
+    background-color: #C9A245;
+}
+
+/* Utilidad de Relleno */
+.relleno-seccion {
+    padding: 80px 20px;
+}
+
+/* Diseño Responsivo (Media Queries - CSS3) */
+@media screen and (max-width: 768px) {
+    .barra-navegacion table,
+    .barra-navegacion tr,
+    .barra-navegacion td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .seccion-hero h1 {
+        font-size: 2.5rem;
+        padding: 0 10px;
+    }
+
+    .seccion-hero p {
+        padding: 0 10px;
+    }
+
+    /* Tablas Responsivas: Forzar celdas a bloque */
+    .cuadricula-beneficios td, 
+    .cuadricula-precios td, 
+    .cuadricula-rutinas td,
+    .cuadricula-blog td,
+    .cuadricula-tablero td, 
+    .cuadricula-pie td {
+        display: block;
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+}
+
+/* ===========================================================================================================================
+   Para comunidad.html (Estilos Específicos)
+   =========================================================================================================================== */
+.texto-secundario-mb {
+    color: #264653;
+    margin-bottom: 30px;
+}
+
+.titulo-discusion {
+    color: #264653;
+    margin-bottom: 0;
+}
+
+
+
+.borde-item-discusion {
+    border-top: 1px solid #eee;
+}
+
+/* ====================================================================================================================================================================
+   Para head.html
+   ==================================================================================================================================================================== */
+#HEAD-healthsync {
+    color: linear-gradient(to right, #2A9D8F, #550779); /* Gradiente eliminado */
+    font-size: 18px; /* Ajustado para mejor visibilidad sin gradiente */
+    font-weight: bold;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #FFFFFF; /* Fondo blanco solido */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Marquee */
+.contenedor-marquesina {
+    background-color: #264653;
+    color: #ffffff;
+    padding: 8px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0.9rem;
+}
+
+.contenido-marquesina {
+    display: inline-block;
+    animation: marquee 20s linear infinite; /* Animación CSS3 */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.separ {
+    margin-left: 200px;
+}
+
+/* Navbar */
+.barra-navegacion {
+    padding: 15px 20px;
+}
+
+.logotipo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #2A9D8F;
+}
+
+.logotipo img {
+    vertical-align: middle;
+}
+
+/* Menú de Navegación Horizontal sin Flexbox */
+.enlaces-navegacion {
+    margin: 0;
+    padding: 0;
+}
+
+.enlaces-navegacion li {
+    display: inline-block; /* Elementos en línea */
+    margin-left: 20px;
+}
+
+.enlaces-navegacion a {
+    font-weight: 500;
+    color: #264653;
+    color: #264653;
+    /* Transición eliminada */
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent; /* Preparar borde para hover */
+}
+
+.enlaces-navegacion a:hover {
+    color: #2A9D8F;
+    border-bottom: 2px solid #2A9D8F;
+}
+
+/* ====================================================================================================================================================================
+   Para login.html
+   ==================================================================================================================================================================== */
+.registro {
+    padding: 80px 20px;
+}
+
+.contenedor-formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #264653;
+}
+
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
+    /* Transición eliminada */
+    background-color: #FFFFFF;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario select:focus,
+.grupo-formulario textarea:focus {
+    border-color: #2A9D8F;
+    border-color: #2A9D8F;
+    /* Outline none eliminado para comportamiento estándar */
+}
+
+.titulo-formulario {
+    text-align: center; 
+    margin-bottom: 30px; 
+    color: #264653;
+}
+
+
+
+/* Botones Sociales */
+.boton-social {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    background-color: #FFFFFF;
+    color: #333;
+    font-weight: 500;
+    width: 100%; /* Asegurar ancho total */
+    display: block; /* Bloque normal */
+    text-align: center;
+}
+
+.boton-social:hover {
+    background-color: #f8f9fa;
+}
+
+.boton-google { color: #DB4437; border-color: #DB4437; }
+.boton-google:hover { background-color: #DB4437; color: white; }
+
+.boton-github { color: #333; border-color: #333; }
+.boton-github:hover { background-color: #333; color: white; }
+
+.boton-telefono { color: #2A9D8F; border-color: #2A9D8F; }
+.boton-telefono:hover { background-color: #2A9D8F; color: white; }
+
+/* ====================================================================================================================================================================
+   Para main.html
+   ==================================================================================================================================================================== */
+.seccion-hero {
+    height: 100vh;
+    /* Restored complex background and flexbox for this section ONLY per user request */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('../pages/IMG/fondo.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 80px;
+}
+
+.seccion-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.seccion-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+/* Botones autenticación */
+/* La tabla HTML se encarga de la disposición */
+.botones-autenticacion .boton {
+    min-width: 150px;
+}
+
+/* Beneficios */
+.beneficios {
+    padding: 100px 20px;
+}
+
+/* Cuadrículas: La disposición la manda la TABLE HTML (33% width).
+   Aquí solo estilizamos la tarjeta interna */
+.tarjeta-beneficio {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    border: 1px solid #ddd;
+    /* Transición eliminada */
+}
+
+.tarjeta-beneficio:hover {
+    border-color: #2A9D8F;
+}
+
+.icono-beneficio {
+    font-size: 3rem;
+    color: #2A9D8F;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: #E0F2F1; /* Color sólido simple reemplazando RGBA */
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    /* Centrado con margin auto para block-level o tabla */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Corrección para que icono-beneficio funcione dentro de tabla si es table */
+table.icono-beneficio {
+    display: table; 
+}
+
+.tarjeta-beneficio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #264653;
+}
+
+.tarjeta-beneficio p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.leer-mas {
+    color: #2A9D8F;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.leer-mas:hover {
+    text-decoration: underline;
+}
+
+/* ====================================================================================================================================================================
+   Para planes.html
+   ==================================================================================================================================================================== */
+.precios {
+    padding: 80px 20px;
+}
+
+.tarjeta-precio {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    /* Transición eliminada */
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.tarjeta-precio:hover {
+    border-color: #2A9D8F;
+}
+
+.tarjeta-precio.destacada {
+    border: 2px solid #2A9D8F;
+}
+
+.tarjeta-precio h3 {
+    font-size: 1.5rem;
+    color: #264653;
+    margin-bottom: 20px;
+}
+
+.lista-caracteristicas {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.lista-caracteristicas li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.lista-caracteristicas li i {
+    color: #2A9D8F;
+    margin-right: 10px;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2A9D8F;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #999;
+    font-weight: 400;
+}
+
+.caracteristica-no-disponible,
+.caracteristica-no-disponible i {
+    color: #ccc;
+}
+
+.distintivo-popular {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    background-color: #2A9D8F; 
+    color: white; 
+    padding: 5px 15px; 
+    font-size: 0.8rem; 
+    border-bottom-left-radius: 10px;
+}
+
+.ancho-100 {
+    width: 100%;
+}
+
+.enlace-primario {
+    color: #2A9D8F;
+}
+
+/* ====================================================================================================================================================================
+   Para rutinas.html & Blog & Seguimiento
+   ==================================================================================================================================================================== */
+.fondo-img-rutina {
+    background: url('../pages/IMG/workout.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+}
+
+.desc-rutina {
+    font-size: 0.9rem; 
+    color: #666; 
+    margin-bottom: 20px;
+}
+
+
+
+.titulo-metas-semanales {
+    margin-bottom: 20px; 
+    color: #264653;
+}
+
+.u-mb-20 {
+    margin-bottom: 20px;
+}
+
+.contenedor-barra-progreso {
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px; /* Altura fija para barra */
+}
+
+.barra-progreso {
+    background-color: #2A9D8F;
+    text-align: center;
+    color: white;
+    font-size: 0.7rem;
+    line-height: 20px;
+}
+
+.barra-progreso-acento {
+    background-color: #E9C46A;
+}
+
+.barra-progreso-oscuro {
+    background-color: #264653;
+}
+
+
+
+.texto-suscripcion {
+    margin-bottom: 15px; 
+    color: #ccc;
+}
+
+/* =========================================
+   Clases de Utilidad (Utility Classes) - Extraídas de Inline Styles
+   ========================================= */
+
+/* Espaciado */
+.m-0 { margin: 0; }
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-15 { margin-bottom: 15px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-40 { margin-bottom: 40px; }
+.mr-10 { margin-right: 10px; }
+.ml-10 { margin-left: 10px; }
+
+.p-0 { padding: 0 !important; }
+.p-20 { padding: 20px; }
+
+/* Tipografía */
+.text-xs { font-size: 0.8rem; }
+.text-sm { font-size: 0.9rem; }
+.text-bold { font-weight: bold; }
+.text-white { color: white !important; }
+.text-gray { color: #666; }
+.text-light-gray { color: #999; }
+.text-primario { color: #2A9D8F; } /* Color primario */
+.text-secundario { color: #264653; } /* Color secundario */
+
+/* Fondos y Bordes */
+.bg-light { background-color: #f9f9f9; }
+.bg-white { background-color: #FFFFFF; }
+.bg-secundario { background-color: #264653; }
+.border-light { border: 1px solid #eee; }
+.border-suave { border: 1px solid #ddd; }
+.border-primario { border-color: #2A9D8F; }
+.border-secundario { border-color: #264653; }
+.border-radius-10 { border-radius: 10px; }
+.border-0 { border: 0; }
+
+/* Listas */
+.list-none { list-style: none; }
+
+/* Dimensiones */
+.w-full { width: 100%; }
+.h-50vh { height: 50vh; }
+.h-300 { height: 300px; }
+
+/* Componentes Específicos Extraídos */
+.separador-fino {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.sidebar-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.video-container {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.iframe-rounded {
+    border-radius: 10px;
+}
+
+.tabla-rutina {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    border-spacing: 0;
+}
+
+.tabla-rutina th {
+    background-color: #264653;
+    color: white;
+}
+
+.tabla-rutina tr.border-bottom td {
+    border-bottom: 1px solid #eee;
+}
+
+.hero-articulo {
+    height: 50vh;
+}
+
+/* Nuevas Clases Agregadas */
+.mt-5 { margin-top: 5px; }
+.mr-15 { margin-right: 15px; }
+.pt-20 { padding-top: 20px; }
+.pb-20 { padding-bottom: 20px; }
+.py-20 { padding-top: 20px; padding-bottom: 20px; }
+.w-80 { width: 80%; }
+.h-40vh { height: 40vh; }
+
+.text-underline { text-decoration: underline; }
+
+.card-shadow {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.result-box {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+/* Elementos de Head/Nav */
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2A9D8F;
+}
+
+/* Buscador Blog */
+.search-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-search {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.flex-center-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.text-xl {
+    font-size: 2rem;
+}
