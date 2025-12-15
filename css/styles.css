@@ -807,3 +807,83 @@ table.icono-beneficio {
 .envio3 img {
     margin-bottom: 10px;
 }
+
+
+/* ====================================================================================================================================================================
+   Para app.html
+   ==================================================================================================================================================================== */
+
+.app {
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff; 
+}
+.app p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.app h2 {
+    font-size: 50px;
+    color: #000000;
+}
+
+.app h3 {
+    font-size: 30px;
+    color: #000000;
+}
+.app button.boton.acceder {
+    font-size: 30px;
+    background-color: #3734fc;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.app img {
+    margin-bottom: 10px;
+}   
+
+.app td.td1 {
+    padding-left: 10px;
+    padding: 20px;
+
+}
+.app table.cuadricula-app {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 20px;
+}
+
+/* ====================================================================================================================================================================
+   Para contacto.html
+   ==================================================================================================================================================================== */
+
+.contacto {
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.contacto p {
+    font-size: 20px;
+    color: #000000;
+    text-align: justify;
+}
+
+.contacto td.td1 {
+    font-size: 50px;
+    color: #000000;
+    background-color:#1D7A6F;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding: 20px;
+    width: 30%;
+}
+
+.contacto h3 {
+    font-size: 50px;
+    color: #000000;
+    text-align: left;
+}
+
