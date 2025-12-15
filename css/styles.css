@@ -741,3 +741,69 @@ table.icono-beneficio {
 .text-xl {
     font-size: 2rem;
 }
+
+/* ====================================================================================================================================================================
+   Para envios.html
+   ==================================================================================================================================================================== */
+.envio1 {
+    padding: 80px 20px;
+    align-items: center;
+    text-align: center;
+    background-color: #6fedfd;
+}
+
+.envio1 p {
+    font-size: 50px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.envio1 b {
+    color: #3f3f3f;
+}
+
+.envio1 img {
+    margin-bottom: 10px;
+}
+
+.envio2 {
+    padding: 80px 20px;
+    align-items: center;
+    text-align: center;
+    background-color: #f599e5;
+}
+
+.envio2 p {
+    font-size: 50px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.envio2  b {
+    color: #3f3f3f;
+}
+
+.envio2 img {
+    margin-bottom: 10px;
+}
+
+.envio3 {
+    padding: 80px 20px;
+    align-items: center;
+    text-align: center;
+    background-color: #4162cf;
+}
+
+.envio3 p {
+    font-size: 50px;
+    color: #2b2a2a;
+    margin-bottom: 15px;
+}
+
+.envio3 b {
+    color: #2c2626;
+}
+
+.envio3 img {
+    margin-bottom: 10px;
+}
